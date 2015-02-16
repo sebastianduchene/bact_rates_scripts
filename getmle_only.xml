@@ -1,0 +1,28 @@
+<?xml version="1.0" standalone="yes"?>
+<beast>
+
+
+	<pathSamplingAnalysis fileName="cholera_ucld_constant.mle.log">
+		<likelihoodColumn name="pathLikelihood.delta"/>
+		<thetaColumn name="pathLikelihood.theta"/>
+	</pathSamplingAnalysis>
+
+	<!-- Stepping-stone sampling estimator from collected samples                -->
+	<steppingStoneSamplingAnalysis fileName="cholera_ucld_constant.mle.log">
+		<likelihoodColumn name="pathLikelihood.delta"/>
+		<thetaColumn name="pathLikelihood.theta"/>
+	</steppingStoneSamplingAnalysis>
+
+	<!-- END Marginal Likelihood Estimator                                       -->
+
+
+</beast>
+
+
+
+
+
+
+
+
+
