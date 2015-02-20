@@ -52,3 +52,14 @@ get_mle <- function(mle_file_name, beast_path){
     return(mles)
 }
 
+concat_list <- function(mat_list){
+  if(length(mat_list) == 1){
+    return(mat_list[[1]])
+  }else if(length(mat_list) == 2){
+    return(rbind(mat_list[[1]], mat_list[[2]]))
+  }else{
+    return(rbind(mat_list[[1]], concat_list(mat_list[-1])))
+  }  
+}
+
+
